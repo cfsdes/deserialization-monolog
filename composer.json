@@ -3,6 +3,6 @@
         "monolog/monolog": "1.18"
     },
     "scripts": {
-        "server": "php -S localhost:8080 vulnerable_app/"
+        "server": "php -S localhost:8080 -t vulnerable_app/"
     }
 }
