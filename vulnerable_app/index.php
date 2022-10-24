@@ -9,6 +9,7 @@ if (isset($_POST['create'])) {
     $p = new Pet($_POST['name'], $_POST['age']);
     $ser = base64_encode(serialize($p));
     setcookie("pet", $ser);
+    header("Refresh:0");
 }
 
 if (isset($_COOKIE['pet'])) {
