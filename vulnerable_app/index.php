@@ -26,7 +26,7 @@ if (isset($_COOKIE['pet'])) {
     <input type="submit" name="create" value="CREATE" />
 </form>
 
-<?php if (isset($_COOKIE['pet'])) : ?>
+<?php if (isset($pet_user)) : ?>
     <h1>PET INFORMATION</h1>
     <p>Name: <?php echo $pet_user->name ?></p>
     <p>Age: <?php echo $pet_user->age ?></p>
